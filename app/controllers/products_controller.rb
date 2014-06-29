@@ -20,7 +20,16 @@ class ProductsController < ApplicationController
   end
   def update
     @product = Product.find_by(:id => params[:id])
-    @product.updated(params[:product])
+    @product.update(params[:product])
     flash[:success] = 'Product Successfully updated.'
     redirect_to "/products/#{@product.id}"
+  end
+  def destroy
+    @product = Product.find_by(:id => params[:id])
+    @product.destroy
+    flash[:success] = "Product Successfully Deleted."
+    redirect_to "/"
+    
+  end
+
 end
