@@ -1,5 +1,13 @@
 class ServiceCallsController < ApplicationController
-   def new
+   
+  def index 
+    @service_calls =ServiceCall.all
+  end
+def show
+    @service_call = ServiceCall.find_by(:id => params[:id])
+  end
+
+  def new
     @service_call = ServiceCall.new
   end
 

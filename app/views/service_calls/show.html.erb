@@ -1,0 +1,9 @@
+<h1>Service Call <%=@service_call.id%></h1>
+
+<ul>
+  <%@service_call.service_call_details.each do |service_call| %>
+    <% if service_call.value != "true" %>
+      <li><%=service_call.name  %></li>
+    <%  end %>
+  <% end %>
+</ul>

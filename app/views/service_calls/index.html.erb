@@ -1,1 +1,11 @@
-index.html.erb
+<h1> Service Calls </h1>
+<table class="table">
+<ol>
+  <% @service_calls.each do|service_call| %>
+    <li>Name: <%=service_call.id %>
+    </li>
+  <%end%>
+</ol>
+
+</table>
+

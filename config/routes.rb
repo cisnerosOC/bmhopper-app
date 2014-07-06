@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   get '/service_calls' => 'service_calls#index'
   get '/service_calls/new' => 'service_calls#new'
+  get '/service_calls/:id' => 'service_calls#show' 
   post '/service_calls' => 'service_calls#create'
 
  
