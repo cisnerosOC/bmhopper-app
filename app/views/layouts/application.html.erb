@@ -8,6 +8,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="main" class="container-fluid">
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
   <div class="container-fluid">
@@ -15,6 +16,6 @@
       <%= content_tag :div, msg, class: "alert alert-#{name}" %>
     <% end %>
 <%= yield %>
-
+</div>
 </body>
 </html>
