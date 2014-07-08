@@ -2,7 +2,7 @@
 
 <ul>
   <%@service_call.service_call_details.each do |service_call| %>
-    <% if service_call.value != "true" %>
+    <% if service_call.value != "false" %>
       <li><%=service_call.name  %></li>
     <%  end %>
   <% end %>

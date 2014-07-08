@@ -7,4 +7,6 @@ class ServiceCall < ActiveRecord::Base
   attr_accessor :service4
   attr_accessor :service5
   attr_accessor :service6
+  attr_accessor :service7
+  
 end
