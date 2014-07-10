@@ -13,6 +13,8 @@ gem 'simple_form'
 gem 'quiet_assets', group: :development
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
+gem 'rspec-rails'
+gem 'capybara'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views

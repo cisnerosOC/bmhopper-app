@@ -13,8 +13,3 @@
  *= require_tree .
  *= require_self
  */
-div {
-  background-image: img-url(/assets/bgpool.jpg)
-
-
-}
